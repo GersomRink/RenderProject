@@ -1,0 +1,6 @@
+
+language: java
+jdk:
+  - oraclejdk16
+after_success:
+  - mvn clean test jacoco:report coveralls:report
